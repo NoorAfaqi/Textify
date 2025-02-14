@@ -197,6 +197,8 @@ def file_upload_page():
             st.error(f'An unexpected error occurred: {str(e)}')
 
 def main():
+    if not os.path.exists("/usr/bin/ffmpeg"):
+        os.system("apt-get update && apt-get install -y ffmpeg")
     set_button_style()
     st.sidebar.title('Textify')
     selected_page = st.sidebar.radio(
