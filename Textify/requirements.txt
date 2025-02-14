@@ -1,0 +1,6 @@
+streamlit
+pytube
+pydub
+yt_dlp
+openai-whisper
+setuptools-rust
